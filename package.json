@@ -1,0 +1,24 @@
+{
+  "name": "wechat-enterprise-account",
+  "version": "0.0.1",
+  "description": "wechat-enterprise-account",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pliman/wechat-enterprise-account.git"
+  },
+  "author": "pliman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pliman/wechat-enterprise-account/issues"
+  },
+  "homepage": "https://github.com/Pliman/wechat-enterprise-account#readme",
+  "dependencies": {
+    "koa": "^1.2.0",
+    "koa-router": "^5.4.0",
+    "koa-static": "^2.0.0"
+  }
+}
