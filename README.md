@@ -1,2 +1,2 @@
-# wechat-enterprise-account
-wechat-enterprise-account
+# wechat-public-account
+wechat-public-account
