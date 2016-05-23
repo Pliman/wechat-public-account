@@ -1,6 +1,6 @@
 export default [{
-    method: 'get',
-    url: '/hello',
-    file: '../hello/hello',
-    processor: 'hello'
+  method: 'get',
+  url: '/hello',
+  file: '../hello/hello',
+  processor: 'hello'
 }];

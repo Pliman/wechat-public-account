@@ -1,7 +1,7 @@
-module.exports = {
-    hello: hello
+function* hello() {
+  this.body = 'hello';
 }
 
-function* hello() {
-    this.body = 'hello';
-}
+module.exports = {
+  hello: hello
+};
