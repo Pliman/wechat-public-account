@@ -1,6 +1,4 @@
-#!bin/bash
-cd client
-npm start
-cd ../server
-
-eslint ./ && babel-node app
+cd server
+npm start &
+cd ../client
+npm start proxy=http://localhost:3100
