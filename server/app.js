@@ -1,29 +1,22 @@
-import koa from 'koa';
+import Koa from 'koa';
 
 import koaCompress from 'koa-compress';
 import bodyParser from 'koa-bodyparser';
-import router from './router/router';
+import nodeCommandParams from 'node-command-params';
+import router from './lib/router/router';
 
-const app = koa();
+const app = new Koa();
 
 app.use(koaCompress());
 app.use(bodyParser());
 
-const runtimeConfig = {};
-
-if (process.argv.length > 2) {
-  const argvs = process.argv.slice(2);
-  runtimeConfig.staticPath = process.argv;
-  runtimeConfig.staticPath = '';
-}
-
-router(app, runtimeConfig);
+router(app, nodeCommandParams());
 
 const port = 3100;
 app.listen(port, function(err) {
-  if (err) {
-    console.log(err);
-  }
+    if (err) {
+        console.log(err);
+    }
 
-  console.log('listening on port %s', port);
+    console.log('listening on port %s', port);
 });
